@@ -13,25 +13,25 @@
 
         left {
             bindings = <&kp A>;
-            key-positions = <36 18>;
+            key-positions = <18 40>;
             layers = <0>;
         };
 
         down {
             bindings = <&kp DOWN>;
-            key-positions = <36 19>;
+            key-positions = <19 40>;
             layers = <0>;
         };
 
         up {
             bindings = <&kp UP>;
-            key-positions = <36 20>;
+            key-positions = <20 40>;
             layers = <0>;
         };
 
         right {
             bindings = <&kp RIGHT>;
-            key-positions = <21 36>;
+            key-positions = <21 40>;
             layers = <0>;
         };
     };
