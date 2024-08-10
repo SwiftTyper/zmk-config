@@ -12,7 +12,7 @@
         compatible = "zmk,combos";
 
         left {
-            bindings = <&kp LEFT>;
+            bindings = <&kp A>;
             key-positions = <36 18>;
             layers = <0>;
         };
