@@ -46,6 +46,13 @@
             #binding-cells = <0>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
+
+        gaming: gaming {
+            compatible = "zmk,behavior-tap-dance";
+            label = "GAMING";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_ALT>, <&kp RIGHT_ALT>, <&tog 2>;
+        };
     };
 
     keymap {
@@ -78,6 +85,15 @@
 &kp LCTRL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5        &kp NUMBER_6       &kp NUMBER_7   &kp NUMBER_8   &kp NUMBER_9          &kp NUMBER_0           &kp PIPE
 &kp LSHFT  &kp TILDE     &kp GRAVE     &kp UNDERSCORE    &kp EQUAL     &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp PLUS       &kp MINUS      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RSHIFT
                                        &kp LEFT_COMMAND  &trans        &kp SPACE           &kp RET            &kp BACKSPACE  &kp RIGHT_ALT
+            >;
+        };
+
+        layer_2 {
+            bindings = <
+&kp NUMBER_0      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_CONTROL  &trans        &kp Q         &kp W         &kp E         &kp R           &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT    &trans        &kp A         &kp S         &kp D         &kp F           &trans  &trans  &trans  &trans  &trans  &trans
+                                              &trans        &to 0         &kp SPACE       &trans  &trans  &trans
             >;
         };
     };
